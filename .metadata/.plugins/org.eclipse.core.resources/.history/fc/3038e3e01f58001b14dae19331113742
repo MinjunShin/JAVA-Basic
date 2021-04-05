@@ -1,0 +1,39 @@
+package chapter2;
+
+public class Variable1 {
+	public static void main(String[] args) {
+	
+		
+		
+		for(int i = 0; i < 4 ; i++) {
+			for(int blk = 3; blk - i > 0 ; blk--) {
+				System.out.print("-");
+			}
+			for(int star = 1; star <= 7 ; star++) {
+				System.out.print("*");
+				
+				int comp = star-1;	
+				
+				if(comp == 1) {
+					comp++;
+					break;
+				}
+			}
+			System.out.println("");
+		}
+	}
+}
+
+
+//* : 1 -> 3 -> 5 -> 7
+//' ' : 3 -> 2 -> 1 -> 0 
+
+// *
+// ***
+// *****
+
+// 0 1 2 3 
+
+// 1 3 5 7 
+
+// 1 2 3 4 

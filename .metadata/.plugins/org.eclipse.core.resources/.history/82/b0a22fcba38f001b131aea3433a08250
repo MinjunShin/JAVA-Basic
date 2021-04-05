@@ -1,0 +1,42 @@
+package chap02;
+
+import java.util.Scanner;
+
+public class MaxofArray {
+
+	static int MaxValue(int a) {
+		
+		int[] heightArray = new int[a];
+		int max = heightArray[0];
+		
+		for(int i=1 ; i<a ; i++)
+			if(max > heightArray[i]) max = heightArray[i];
+		
+		return max;
+	}
+	
+	
+	public static void main(String[] args) {
+
+		Scanner stdIn = new Scanner(System.in);
+		int n = stdIn.nextInt();
+		
+		System.out.println("키의 최댓값을 구합니다.");
+		System.out.println("사람 수 : " + n);
+		
+		int[] heightArray = new int[n];
+		
+		Scanner stdIn2 = new Scanner(System.in);
+		
+		for(int i = 1; i <= n ; i++)
+			int inputHeight = stdIn2.nextInt();
+					
+		
+		for(int i = 1; i<heightArray.length; i++)
+			System.out.println(heightArray[i]);
+		
+		System.out.println(MaxValue(n));	
+		
+	}
+
+}

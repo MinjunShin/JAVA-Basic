@@ -1,0 +1,22 @@
+package chapter2;
+
+public class Variable1 {
+	public static void main(String[] args) {
+	
+		for(int i = 1; i <= 4 ; i++) {
+			for(int star = 1; star <= 7 ; star++) {
+				if (star / 2 == 0)
+					continue;
+				System.out.println("*");
+			}
+			//for() {}
+			
+			System.out.println("");
+		}
+		
+	}
+}
+
+
+//* : 1 -> 3 -> 5 -> 7
+//' ' : 3 -> 2 -> 1 -> 0 
